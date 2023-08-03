@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;500;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@300&family=PT+Serif:wght@400;700&family=Roboto&display=swap');
+
+*{
+    font-family: 'Handjet', cursive;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    /* Colors */
+
+    /* Primary */
+    --orange: hsl(26, 100%, 55%);
+    --paleOrange: hsl(25, 100%, 94%);
+    
+    /* Neutral */
+    --veryDarkBlue: hsl(220, 13%, 13%);
+    --darkGrayishBlue: hsl(219, 9%, 45%);
+    --grayishBlue: hsl(220, 14%, 75%);
+    --lightGrayishBlue: hsl(223, 64%, 98%);
+    --Black: rgba(0, 0, 0, 0.75);
+}
+
