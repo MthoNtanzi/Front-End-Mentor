@@ -1,2 +1,2 @@
 # Front-End-Mentor
-All the challenges I do on Front-end Mentor
+This repository will be used to keep ll the challenges I do on FrontEnd Mento
