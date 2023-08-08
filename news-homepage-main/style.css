@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    /* Variables */
+    /* Primary */
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+    /* Neutral */
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.darkBlue{
+    color: var(--veryDarkBlue);
+}
+
+.readMoreBtn{
+    background-color: var(--softRed); 
+}
+
+.news-box{
+    background-color: var(--veryDarkBlue);
+}
+
+.news-heading{
+    color: var(--softOrange);
+}
+
+.darkGreyText{
+ color: var(--darkGrayishBlue);
+}
+
+.greyText{
+    color: var(--grayishBlue);
+}

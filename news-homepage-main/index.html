@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="p-3 md:px-24 mb-12">
+  <div class="flex justify-between py-3 my-3">
+    <img class="py-2" src="./assets/images/logo.svg">
+    <img class="py-4 md:hidden" src="assets/images/icon-menu.svg">
+    <div class="hidden md:inline-block">
+      <a href="#">Home</a>
+      <a class="pl-14" href="#">New</a>
+      <a class="pl-14" href="#">Popular</a>
+      <a class="pl-14" href="#">Trending</a>
+      <a class="pl-14" href="#">Categories</a>
+    </div>
+  </div>
+  
+  
+  <div class="md:flex gap-3">
+    <div>
+      <img class="block md:hidden" src="./assets/images/image-web-3-mobile.jpg" alt="Web 3">
+      <img class="hidden md:block" src="./assets/images/image-web-3-desktop.jpg" alt="Web 3">
+      <div class="md:flex gap-16">
+        <h1 class="text-5xl font-bold mt-7">The Bright Future of Web 3.0?</h1>
+
+        <div class="md:pl-14">
+          <p class="my-4 darkGreyText">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?
+          </p>
+  
+          <button class="readMoreBtn text-white w-44 p-3 mb-5 font-semibold">Read more</button>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="my-9 md:my-0 p-6 text-white news-box">
+      <h2 class="news-heading text-3xl font-extrabold mb-7">New</h2> 
+
+      <h3 class="font-bold">Hydrogen VS Electric Cars</h3>
+      <p class="pb-5 pt-3 greyText">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr/>
+      <h3 class="font-bold mt-4">The Downsides of AI Artistry</h3>
+      <p class="pb-5 pt-3 greyText">What are the possible adverse effects of on-demand AI image generation?</p>
+      <hr/>
+      <h3 class="font-bold mt-4">Is VC Funding Drying Up?</h3>
+      <p class="pt-3 greyText">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </div>
+  <div class="md:flex gap-3 md:mt-11">
+    <div class="flex gap-5 my-10 h-44">
+      <img class="w-28 h-48 basis-2/5" src="assets/images/image-retro-pcs.jpg" alt="">
+      <div class="darkBlue basis-3/5">
+        <h4 class="font-extrabold text-3xl py-1 darkGreyText">01</h4>
+        <p class="font-bold text-lg">Reviving Retro PCs</p>
+        <p class="pt-3 darkGreyText">What happens when old PCs are given modern upgrades?</p>
+      </div>
+      
+    </div>
+    
+    <div class="flex gap-5 my-10 h-44">
+      <img class="w-28 h-48 basis-2/5" src="assets/images/image-top-laptops.jpg" alt="">
+      <div class="darkBlue basis-3/5">
+        <h4 class="font-extrabold text-3xl py-1 darkGreyText">02</h4>
+        <p class="font-bold text-lg">Top 10 Laptops of 2022</p>
+        <p class="pt-3 darkGreyText">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    
+    <div class="flex gap-5 my-10 h-44">
+      <img class="w-28 h-48 basis-2/5" src="assets/images/image-gaming-growth.jpg" alt="">
+      <div class="darkBlue basis-3/5">
+        <h4 class="font-extrabold text-3xl py-1 darkGreyText">03</h4>
+        <p class="font-bold text-lg">The Growth of Gaming</p>
+        <p class="pt-3 darkGreyText">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>
