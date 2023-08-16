@@ -22,6 +22,17 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+.overlay{
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 0;
+}
+#menuBtn:hover{
+    cursor: pointer;
+}
+
+#dropdownMenu{
+    overflow-y: hidden;
+}
 
 .darkBlue{
     color: var(--veryDarkBlue);
@@ -29,6 +40,9 @@ body{
 
 .readMoreBtn{
     background-color: var(--softRed); 
+}
+.readMoreBtn:hover{
+    background-color: var(--veryDarkBlue);
 }
 
 .news-box{
@@ -45,4 +59,12 @@ body{
 
 .greyText{
     color: var(--grayishBlue);
+}
+
+.softRed:hover{
+    color: var(--softRed);
+}
+
+.softOrange:hover{
+    color: var(--softOrange);
 }

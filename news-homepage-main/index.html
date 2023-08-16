@@ -10,15 +10,27 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body class="p-3 md:px-24 mb-12">
+
+  <div id="dropdownMenu" class="fixed bg-white h-full w-4/6 top-0 right-0 hidden">
+    <img class="py-4 fixed right-4 top-5" id="closeMenuBtn" src="assets/images/icon-menu-close.svg">
+    <div class="pt-40 px-4">
+      <a class="softRed block p-3 font-medium text-xl" href="#">Home</a>
+      <a class="softRed block p-3 font-medium text-xl" href="#">New</a>
+      <a class="softRed block p-3 font-medium text-xl" href="#">Popular</a>
+      <a class="softRed block p-3 font-medium text-xl" href="#">Trending</a>
+      <a class="softRed block p-3 font-medium text-xl" href="#">Categories</a>
+    </div>
+  </div>
+  
   <div class="flex justify-between py-3 my-3">
     <img class="py-2" src="./assets/images/logo.svg">
-    <img class="py-4 md:hidden" src="assets/images/icon-menu.svg">
+    <img class="py-4 md:hidden" id="menuBtn" src="assets/images/icon-menu.svg">
     <div class="hidden md:inline-block">
-      <a href="#">Home</a>
-      <a class="pl-14" href="#">New</a>
-      <a class="pl-14" href="#">Popular</a>
-      <a class="pl-14" href="#">Trending</a>
-      <a class="pl-14" href="#">Categories</a>
+      <a class="softRed" href="#">Home</a>
+      <a class="pl-14 softRed" href="#">New</a>
+      <a class="pl-14 softRed" href="#">Popular</a>
+      <a class="pl-14 softRed" href="#">Trending</a>
+      <a class="pl-14 softRed" href="#">Categories</a>
     </div>
   </div>
   
@@ -45,13 +57,13 @@
     <div class="my-9 md:my-0 p-6 text-white news-box">
       <h2 class="news-heading text-3xl font-extrabold mb-7">New</h2> 
 
-      <h3 class="font-bold">Hydrogen VS Electric Cars</h3>
+      <a href="#" class="font-bold softOrange">Hydrogen VS Electric Cars</a>
       <p class="pb-5 pt-3 greyText">Will hydrogen-fueled cars ever catch up to EVs?</p>
       <hr/>
-      <h3 class="font-bold mt-4">The Downsides of AI Artistry</h3>
+      <a href="#" class="font-bold softOrange mt-4">The Downsides of AI Artistry</a>
       <p class="pb-5 pt-3 greyText">What are the possible adverse effects of on-demand AI image generation?</p>
       <hr/>
-      <h3 class="font-bold mt-4">Is VC Funding Drying Up?</h3>
+      <a href="#" class="font-bold softOrange mt-4">Is VC Funding Drying Up?</a>
       <p class="pt-3 greyText">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
     </div>
   </div>
@@ -60,7 +72,7 @@
       <img class="w-28 h-48 basis-2/5" src="assets/images/image-retro-pcs.jpg" alt="">
       <div class="darkBlue basis-3/5">
         <h4 class="font-extrabold text-3xl py-1 darkGreyText">01</h4>
-        <p class="font-bold text-lg">Reviving Retro PCs</p>
+        <a href="#" class="font-bold text-lg softRed">Reviving Retro PCs</a>
         <p class="pt-3 darkGreyText">What happens when old PCs are given modern upgrades?</p>
       </div>
       
@@ -70,7 +82,7 @@
       <img class="w-28 h-48 basis-2/5" src="assets/images/image-top-laptops.jpg" alt="">
       <div class="darkBlue basis-3/5">
         <h4 class="font-extrabold text-3xl py-1 darkGreyText">02</h4>
-        <p class="font-bold text-lg">Top 10 Laptops of 2022</p>
+        <a href="#" class="font-bold text-lg softRed">Top 10 Laptops of 2022</a>
         <p class="pt-3 darkGreyText">Our best picks for various needs and budgets.</p>
       </div>
     </div>
@@ -79,13 +91,13 @@
       <img class="w-28 h-48 basis-2/5" src="assets/images/image-gaming-growth.jpg" alt="">
       <div class="darkBlue basis-3/5">
         <h4 class="font-extrabold text-3xl py-1 darkGreyText">03</h4>
-        <p class="font-bold text-lg">The Growth of Gaming</p>
+        <a href="#"  class="font-bold text-lg softRed">The Growth of Gaming</a>
         <p class="pt-3 darkGreyText">How the pandemic has sparked fresh opportunities.</p>
       </div>
     </div>
     
   </div>
   
-  
+  <script src="script.js"></script>
 </body>
 </html>
