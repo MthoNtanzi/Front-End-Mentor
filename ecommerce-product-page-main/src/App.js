@@ -4,7 +4,7 @@ import Sneakers from './Sneakers';
 
 function App() {
   return (
-    <div className='md:px-20'>
+    <div className='md:px-24'>
       < Navbar />
       < Sneakers />
     </div>

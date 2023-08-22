@@ -45,8 +45,8 @@ export default function Navbar() {
       </div>
         
         <div className='flex gap-1 p-3'>
-        < CartImg className='h-8 w-8 pt-1 hover:cursor-pointer'/>
-            <img src={ avatar } alt='avatar' className='h-8'/>       
+        < CartImg className='h-8 w-8 pt-1 hover:cursor-pointer' />
+            <img src={ avatar } alt='avatar' className='h-8 hover:cursor-pointer hover:border-2 hover:border-orange-500 rounded-full'/>       
         </div>
     </div>
   )
