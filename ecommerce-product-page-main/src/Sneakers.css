@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;500;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@300&family=PT+Serif:wght@400;700&family=Roboto&display=swap');
 
-
 *{
     font-family: 'Handjet', cursive;
     font-family: 'Kumbh Sans', sans-serif;
@@ -27,19 +26,32 @@
     --lightGrayishBlue: hsl(223, 64%, 98%);
     --Black: rgba(0, 0, 0, 0.75);
 }
-
-.slide-in-left{-webkit-animation:slide-in-left 1s ease-in both;animation:slide-in-left 1s ease-in both}
-@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
-.Navbar{
-    border-bottom: 2px solid var(--lightGrayishBlue);
+.headingTitle{
+    color: var(--orange);
 }
 
-.menuTitles{
+.valueBx{
+    background-color: var(--lightGrayishBlue);
+}
+.cartBx{
+    background-color: var(--orange);
+}
+.cartBx:hover{
+    background-color: hsla(26, 100%, 55%, 0.6);
+}
+
+.paragraph{
     color: var(--darkGrayishBlue);
 }
 
-.menuTitles:hover{
-    color: var(--veryDarkBlue);
-    border-bottom: 3px solid orange;
-    padding-bottom: 28px;
+.fiftyP{
+    background-color: var(--paleOrange);
+    color: var(--orange);
+}
+.specialPrice{
+    color: var(--grayishBlue);
+}
+.thumbnail-img:hover{
+    border: 2px solid var(--orange);
+    border-radius: 10px;
 }
