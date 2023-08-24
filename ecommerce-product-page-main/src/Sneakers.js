@@ -51,7 +51,7 @@ const Sneakers =({cartProducts})=> {
         <div className='md:grid flex-col'>
               <div>
                 <img src={productImg} className='md:rounded-lg w-auto'/>
-                  <div  className='absolute top-1/3 flex justify-between h-56 w-full md:hidden items-center'>
+                  <div  className='absolute top-36 flex justify-between h-56 w-full md:hidden items-center'>
                       <img src='./images/icon-previous.svg' alt='Previous' className='bg-white rounded-full p-3 h-10 w-10 m-3 hover:cursor-pointer hover:text-orange-500' onClick={prevImage}/>
                       <img src='./images/icon-next.svg' alt='Next' className='bg-white rounded-full p-3 h-10 w-10 m-3 hover:cursor-pointer hover:text-orange-500' onClick={nextImage}/>
                   </div>
