@@ -58,7 +58,7 @@ export default function Navbar({itemCount, deleteItems}) {
           {menuOpen ? (
             <>
             < CloseMenu onClick={handleMenu}/>
-              <div className='flex flex-col absolute top-0 left-0 h-screen w-3/5 pt-9 pl-4 bg-white slide-in-left'>
+              <div className='flex flex-col fixed top-0 left-0 z-50 h-screen w-3/5 pt-9 pl-4 bg-white slide-in-left'>
               < CloseMenu onClick={handleMenu}/>
                 <a href='/' className='py-3 font-bold'>Collections</a>
                 <a href='/' className='py-3 font-bold'>Men</a>
