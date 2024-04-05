@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: ease 0.5s;
+    transition: ease 0.3s;
 }
 
 
@@ -73,17 +73,26 @@ body{
 }
 
 .links{
-    color: white;
-    text-decoration: none;
     background-color: var(--grey);
     width: 100%;
     margin-top: 1rem;
     padding: 12.5px;
     border-radius: 10px;
     font-weight: 700;
+    list-style-type: none;
+    cursor: pointer;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.links:hover{
+.social-links :hover{
     background-color: var(--primary);
-    color: var(--dark-grey);
+    a{
+        color: var(--dark-grey);
+    }
+    
 }
+
+
