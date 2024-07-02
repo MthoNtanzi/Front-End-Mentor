@@ -1,0 +1,60 @@
+:root{
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    font-weight: 500;
+    font-size: 18px;
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.main-body h1{
+    font-size: 2.4rem;
+}
+.main-body p{
+    color: var(--mediumGray);
+}
+
+.learn-more-btn{
+    padding: 0.8rem;
+    word-spacing: 2px;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: #000;
+    color: var(--almostWhite);
+    font-weight: 700;
+}
+
+.client-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
