@@ -5,40 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <main>
+    <img class="logo" src="images/logo.svg" alt="" srcset="">
+    <div class="form">
+      <article class="leftArticle">
+        <div class="inputBoxes">
+          <label for="bill" class="label">Bill</label>
+          <img src="images/icon-dollar.svg" class="icons" alt="people icon">
+          <input type="number" placeholder="0" name="bill" id="bill" class="btns greyInput">
+        </div>
+        
+      
+        <div class="tipAndButtons">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <p>Select Tip %</p>
+          <div class="buttons_grid">
+            <button class="form_btns btns">5%</button>
+            <button class="form_btns btns">10%</button>
+            <button class="form_btns btns">15%</button>
+            <button class="form_btns btns">25%</button>
+            <button class="form_btns btns">50%</button>
+            <input type="number" placeholder="Custom" id="custom" class="form_btns btns greyInput">
+          </div>
+        </div>
+
+        <div class="inputBoxes">
+          <label for="numOfPeople" class="label">Number of People</label>
+          <img src="images/icon-person.svg" class="icons" alt="people icon">
+          <input type="number" name="numOfPeople" placeholder="0" id="bill" class="btns greyInput">
+        </div>
+        
+      </article>
+      <article class="totals">
+        <div class="totalsDiv">
+          <div>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          
+          <p class="cashTotals">$ <span id="tipAmount">0.00</span></p>
+        </div>
+        
+        <div class="totalsDiv">
+          <div>
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          
+          <p class="cashTotals">$ <span id="tipAmount">0.00</span></p>
+        </div>
+        
+      
+        <button id="reset" class="btns">Reset</button>
+      </article>
+    </div>
+  </main>
 </body>
 </html>

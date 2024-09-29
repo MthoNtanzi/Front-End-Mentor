@@ -1,0 +1,122 @@
+:root{
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishcyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--lightGrayishCyan);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+}
+
+
+main{
+    display: grid;
+    align-content: center;
+    max-width: 800px;
+    gap: 20px;
+}
+.logo{
+    justify-self: center;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: var(--veryLightGrayishCyan);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* ================== Left Article ================== */
+
+.leftArticle{
+    color: var(--darkGrayishcyan);
+}
+
+.buttons_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 12px;
+}
+
+.icons{
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 42px;
+    left: 8px;
+}
+
+.tipAndButtons{
+    padding: 20px 0;
+}
+
+.btns{
+    cursor: pointer;
+    border-radius: 2.5px;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+}
+
+.form_btns{
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.greyInput{
+    background-color: var(--lightGrayishCyan);
+    color: var(--veryDarkCyan);
+    text-align: right;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.label{
+    padding-bottom: 5px;
+}
+
+.inputBoxes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* ================== Right Article ================== */
+
+.totals{
+    background-color: var(--veryDarkCyan);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
