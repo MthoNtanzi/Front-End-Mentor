@@ -1,4 +1,5 @@
 :root{
+    --strongCyan: hsl(172, 67%, 45%);
     --veryDarkCyan: hsl(183, 100%, 15%);
     --darkGrayishcyan: hsl(186, 14%, 43%);
     --grayishCyan: hsl(184, 14%, 56%);
@@ -25,7 +26,7 @@ main{
     display: grid;
     align-content: center;
     max-width: 800px;
-    gap: 20px;
+    gap: 100px;
 }
 .logo{
     justify-self: center;
@@ -34,7 +35,7 @@ main{
 .form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
     background-color: var(--veryLightGrayishCyan);
     padding: 30px;
     border-radius: 12px;
@@ -66,18 +67,17 @@ main{
 
 .btns{
     cursor: pointer;
-    border-radius: 2.5px;
+    border-radius: 4.5px;
     border: none;
     padding: 10px 20px;
     font-family: "Space Mono", monospace;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .form_btns{
     background-color: var(--veryDarkCyan);
     color: var(--white);
     font-size: 16px;
-    font-weight: 600;
 }
 
 .greyInput{
@@ -85,7 +85,6 @@ main{
     color: var(--veryDarkCyan);
     text-align: right;
     font-size: 16px;
-    font-weight: 700;
 }
 
 .label{
@@ -103,11 +102,47 @@ main{
 
 .totals{
     background-color: var(--veryDarkCyan);
-    padding: 20px;
+    padding:  30px 25px;
     border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 20px;
+}
+
+.totalsDiv{
+    display: flex;
+    justify-content: space-between;
+    p{
+        margin: 0;
+    }
+}
+.amountDescription{
+    font-size: 16px;
+    color: var(--veryLightGrayishCyan);
+}
+.perPerson{
+    font-size: 10px;
+    color: var(--lightGrayishCyan);
 }
 
 
+.cashTotals{
+    font-size: 24px;
+    color: var(--strongCyan);
+}
+
+#reset{
+    height: 50px;
+    align-self: flex-end;
+    background-color: hsla(172, 67%, 45%, 0.3);
+    color: var(--veryDarkCyan);
+}
+
+
+
+
+
+/* ===========  Webkits  ============ */
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -120,3 +155,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+/* ================== Media Queries ================== */

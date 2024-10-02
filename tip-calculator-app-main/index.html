@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 <body>
   <main>
-    <img class="logo" src="images/logo.svg" alt="" srcset="">
+    <img class="logo" src="images/logo.svg" alt="logo image" srcset="">
     <div class="form">
       <article class="leftArticle">
         <div class="inputBoxes">
@@ -29,11 +29,11 @@
   
           <p>Select Tip %</p>
           <div class="buttons_grid">
-            <button class="form_btns btns">5%</button>
-            <button class="form_btns btns">10%</button>
-            <button class="form_btns btns">15%</button>
-            <button class="form_btns btns">25%</button>
-            <button class="form_btns btns">50%</button>
+            <button class="form_btns btns tipValue" id="5" onclick="userTipPercentage(5)">5%</button>
+            <button class="form_btns btns tipValue" id="10" onclick="userTipPercentage(10)">10%</button>
+            <button class="form_btns btns tipValue" id="15" onclick="userTipPercentage(15)">15%</button>
+            <button class="form_btns btns tipValue" id="25" onclick="userTipPercentage(25)">25%</button>
+            <button class="form_btns btns tipValue" id="50" onclick="userTipPercentage(50)">50%</button>
             <input type="number" placeholder="Custom" id="custom" class="form_btns btns greyInput">
           </div>
         </div>
@@ -41,27 +41,25 @@
         <div class="inputBoxes">
           <label for="numOfPeople" class="label">Number of People</label>
           <img src="images/icon-person.svg" class="icons" alt="people icon">
-          <input type="number" name="numOfPeople" placeholder="0" id="bill" class="btns greyInput">
+          <input type="number" name="numOfPeople" placeholder="0" id="numOfPeople" class="btns greyInput">
         </div>
         
       </article>
       <article class="totals">
         <div class="totalsDiv">
-          <div>
-            <p>Tip Amount</p>
-            <p>/ person</p>
+          <div class="personLabels">
+            <p class="amountDescription">Tip Amount</p>
+            <p class="perPerson">/ person</p>
           </div>
-          
-          <p class="cashTotals">$ <span id="tipAmount">0.00</span></p>
+          <p class="cashTotals">$ <span id="tipAmountPerPerson">0.00</span></p>
         </div>
         
         <div class="totalsDiv">
-          <div>
-            <p>Total</p>
-            <p>/ person</p>
+          <div class="personLabels">
+            <p class="amountDescription">Total</p>
+            <p class="perPerson">/ person</p>
           </div>
-          
-          <p class="cashTotals">$ <span id="tipAmount">0.00</span></p>
+          <p class="cashTotals">$ <span id="totalPerPerson">0.00</span></p>
         </div>
         
       
@@ -69,5 +67,6 @@
       </article>
     </div>
   </main>
+  <script src="assets/script.js"></script>
 </body>
 </html>
