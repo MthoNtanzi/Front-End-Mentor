@@ -8,9 +8,14 @@
     --white: hsl(0, 0%, 100%);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
+    
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +55,7 @@ main{
 
 .buttons_grid{
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
     gap: 12px;
 }
 
@@ -171,3 +176,25 @@ input[type=number] {
 
 
 /* ================== Media Queries ================== */
+
+@media screen and (max-width: 700px){
+    body{
+        grid-template-columns: 1fr
+    }
+
+    .logo{
+        margin-top: 20px;
+    }
+
+    .form{
+        grid-template-columns: 1fr
+    }
+
+    .buttons_grid{
+        input{
+            width: 100%;
+        }
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+    }
+}

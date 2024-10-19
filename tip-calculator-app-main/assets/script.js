@@ -10,6 +10,7 @@ const billValue = document.getElementById("bill");
 const tipPerPerson = document.getElementById("tipAmountPerPerson");
 const totalPricePerPerson = document.getElementById("totalPerPerson");
 const numOfPeople = document.getElementById("numOfPeople");
+const customTipInput = document.getElementById("custom");
 
 // Function to calculate the total amount per person (without tip)
 const calculatePerPerson = () => {
@@ -50,3 +51,20 @@ numOfPeople.addEventListener("change", calculatePerPerson);
 function userTipPercentage(userPercentage) {
     calculateTip(userPercentage);
 }
+
+// Listen for input changes in the custom tip field
+customTipInput.addEventListener("change", () => {
+    const customTipValue = parseFloat(customTipInput.value);
+    
+    if (!isNaN(customTipValue) && customTipValue >= 0) {
+        // Call calculateTip with the custom percentage
+        calculateTip(customTipValue);
+    }
+});
+
+
+numOfPeople.addEventListener("change", () => {
+    if (numOfPeople.value == 0) {
+        alert("no!")
+    }
+})
