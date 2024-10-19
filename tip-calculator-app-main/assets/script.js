@@ -11,6 +11,8 @@ const tipPerPerson = document.getElementById("tipAmountPerPerson");
 const totalPricePerPerson = document.getElementById("totalPerPerson");
 const numOfPeople = document.getElementById("numOfPeople");
 const customTipInput = document.getElementById("custom");
+const reset = document.getElementById("reset")
+const errorLabel = document.getElementById("redError");
 
 // Function to calculate the total amount per person (without tip)
 const calculatePerPerson = () => {
@@ -30,6 +32,14 @@ const calculatePerPerson = () => {
 
 // Function to calculate the tip per person
 const calculateTip = (userPercentage = 0) => {
+    if (numOfPeople.value == 0) {
+        numOfPeople.classList.toggle("redBorder");
+        errorLabel.style.display = "block";
+        return;
+    }
+    numOfPeople.classList.toggle("redBorder");
+    errorLabel.style.display = "none";
+
     const bill = parseFloat(billValue.value) || 0;  // Get bill value, default to 0 if empty
     const people = parseInt(numOfPeople.value) || 1;  // Get number of people, default to 1 if empty
 
@@ -63,8 +73,11 @@ customTipInput.addEventListener("change", () => {
 });
 
 
-numOfPeople.addEventListener("change", () => {
-    if (numOfPeople.value == 0) {
-        alert("no!")
-    }
-})
+
+
+reset.addEventListener("click", () => {
+    billValue.value = "";
+    numOfPeople.value = "";
+    tipPerPerson.innerHTML = 0;
+    totalPricePerPerson.innerHTML = 0;
+});
